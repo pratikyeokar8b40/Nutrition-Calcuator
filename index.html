@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nutrition Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🥗 Nutrition Calculator</h1>
+  <p class="subtitle">Enter food consumed (grams or count)</p>
+
+  <div class="food-grid">
+
+    <div class="food-card">
+      <h3>🍗 Chicken (Cooked)</h3>
+      <p>Protein: 31g / 100g</p>
+      <input type="number" placeholder="grams" id="chicken">
+    </div>
+
+    <div class="food-card">
+      <h3>🧀 Paneer</h3>
+      <p>Protein: 19g / 100g</p>
+      <input type="number" placeholder="grams" id="paneer">
+    </div>
+
+    <div class="food-card">
+      <h3>🌱 Soya Chunks (Cooked)</h3>
+      <p>Protein: 27g / 100g</p>
+      <input type="number" placeholder="grams" id="soya">
+    </div>
+
+    <div class="food-card">
+      <h3>🌿 Sprouts</h3>
+      <p>Protein: 3g / 100g</p>
+      <input type="number" placeholder="grams" id="sprouts">
+    </div>
+
+    <div class="food-card">
+      <h3>🌾 Chickpeas</h3>
+      <p>Protein: 9g / 100g</p>
+      <input type="number" placeholder="grams" id="chana">
+    </div>
+
+    <div class="food-card">
+      <h3>🥜 Peanuts</h3>
+      <p>Protein: 25.8g / 100g</p>
+      <input type="number" placeholder="grams" id="peanuts">
+    </div>
+
+    <div class="food-card">
+      <h3>🥣 Oats</h3>
+      <p>Protein: 17g / 100g</p>
+      <input type="number" placeholder="grams" id="oats">
+    </div>
+
+    <div class="food-card">
+      <h3>🍚 Rice (Cooked)</h3>
+      <p>Protein: 2.7g / 100g</p>
+      <input type="number" placeholder="grams" id="rice">
+    </div>
+
+    <div class="food-card">
+      <h3>🥚 Eggs</h3>
+      <p>Protein: 6g per egg</p>
+      <input type="number" placeholder="count" id="eggs">
+    </div>
+
+    <div class="food-card">
+      <h3>🍌 Banana</h3>
+      <p>Protein: 1.3g per banana</p>
+      <input type="number" placeholder="count" id="banana">
+    </div>
+
+    <div class="food-card">
+      <h3>🫓 Chapati</h3>
+      <p>Protein: 3.5g per chapati</p>
+      <input type="number" placeholder="count" id="chapati">
+    </div>
+
+  </div>
+
+  <button onclick="calculate()">Calculate Nutrition</button>
+
+  <div class="result">
+    <h2>📊 Total Nutrition</h2>
+    <p>💪 Protein: <span id="totalProtein">0</span> g</p>
+    <p>🔥 Calories: <span id="totalCalories">0</span> kcal</p>
+    <p>🥓 Fat: <span id="totalFat">0</span> g</p>
+    <p>🍞 Carbs: <span id="totalCarbs">0</span> g</p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
